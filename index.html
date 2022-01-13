@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel = "icon" href = "2048_logo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" charset="utf-8"></script>
+</head>
+<body>
+    
+  <div class="container">
+    <div class="info">
+      <h1>2048</h1>
+      <!-- <a onClick="window.location.reload();" class="retry-button score-container-1">Try again</a> -->
+      <button class="btn btn-primary score-container-1"><a onClick="window.location.reload();" class="glyphicon glyphicon-refresh  retry-button ">Try Again</a></button>
+      <div class="score-container">
+        <div class="score-title">score</div>
+        <span id="score">0</span>
+      </div>
+    </div>
+
+
+
+    <span id="result">Join the numbers and get to the <b>2048</b> tile!</span>
+    <div class="grid"unselectable="on" onselectstart="return false;" onmousedown="return false;" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;"></div>
+    <br>
+    <button type="button" class="button" id="btn-u">Up</button>
+    <button type="button" class="button" id="btn-d">Down</button>
+    <button type="button" class="button" id="btn-l">Left</button>
+    <button type="button" class="button" id="btn-r">Right</button>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong><br>> Use your <strong>arrow keys</strong> to move the tiles.<br>> When 2 same number tiles touch, they <strong>merge into one!</strong>
+    </p>
+  </div>
+
+
+  
+
+</body>
+</html>
+
